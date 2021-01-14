@@ -1,0 +1,28 @@
+footer {
+    background: darken($clr-alt, 65%);
+    padding: 1.5em;
+    display: flex;
+    /* position: fixed;*/
+    bottom: 0;
+    width: 100%;
+    
+    .brand img {
+      height: 20px;
+      display: block;
+      filter: invert(1);
+      margin-bottom: 0.8em;
+    }
+    a {
+      color: white;
+      display: block;
+      padding: 0.3em;
+    }
+    i {
+      color: white;
+      padding-right: 0.5em;
+    }
+  }
+    
+
+
+  

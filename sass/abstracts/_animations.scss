@@ -1,0 +1,45 @@
+@keyframes loadingFade {
+    from {
+      opacity: 1;
+      z-index: 10;
+    }
+    90% {
+      opacity: 1;
+      z-index: 10;
+    }
+    to {
+      opacity: 0;
+      z-index: -5;
+    }
+  }
+  
+  @keyframes loadingSpinner {
+    from {
+      z-index: 15;
+      transform: rotate(0deg);
+    }
+    to {
+      z-index: -5;
+      transform: rotate(1080deg);
+    }
+  }
+
+  @keyframes validationSpinner {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes fadeInMenus {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+// Roboto + Shrikhand - fonts 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap');
+
+// Variable, mixins and animations  import
+@import
+'abstracts/variables',
+'abstracts/mixins',
+'abstracts/animations',
+
+// document base rules
+'base/base',
+
+//components
+'components/intro',
+'components/cards',
+'components/steps',
+'components/loading',
+'components/button',
+'components/menu',
+'components/imgs',
+'components/faheart',
+
+// Layout importation
+
+'layout/header',
+'layout/footer'

@@ -1,0 +1,67 @@
+.restaurants {
+    padding: 2em 1em 4em;
+    margin: auto;
+    background: lighten($clr-alt, 10%);
+    h2 {
+      display: block;
+      text-align: left;
+      font-size: 26px;
+      padding: 1em 0 0;
+    }
+    h3 {
+      font-weight: 600;
+    }
+    .cards {
+      @include flexbox;
+      margin: auto;
+    }
+    .card {
+      position: relative;
+      margin: 20px;
+      min-width: 300px;
+      width: 335px;
+      height: 250px;
+      overflow: hidden;
+      border: none;
+      border-radius: 10px;
+      box-shadow: $shadow;
+      transition: box-shadow 0.3s;
+      background: white;
+      margin: 20px 10px 0;
+      &:hover {
+        box-shadow: $shadow-hover;
+      }
+      &__img {
+        height: 175px;
+        width: 100%;
+        margin: 0;
+        object-fit: cover;
+      }
+      &__tag {
+        @include flexbox($direction: column, $wrap: nowrap);
+        position: absolute;
+        font-size: 0.9em;
+        font-weight: 500 !important;
+        top: 15px;
+        right: 15px;
+        border-radius: 3px;
+        font-weight: bold;
+        color: darken($clr-tertiary, 40%);
+        height: 30px;
+        width: 80px;
+        background: $clr-tertiary;
+      }
+      &__infos {
+        padding: 1em;
+      }
+      h3,
+      p {
+        padding-top: 0.2em;
+      }
+      &__icon {
+        position: absolute;
+        right: 10px;
+      }
+    }
+  }
+  

@@ -1,0 +1,50 @@
+.far.fa-heart {
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  z-index: 5;
+  overflow: hidden;
+  &:hover {
+    transition: color 0.5s ease;
+    color: transparent;
+  }
+  &:hover + .box-hidden {
+    bottom: 30px;
+  }
+}
+
+
+.box-hidden {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 10px;
+  bottom: 10px;
+  background: white;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+
+.fas.fa-heart {
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background: linear-gradient(to top, $clr-secondary, $clr-primary);
+  /* Background-clip: text;*/
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+.menu__heart {
+  position: relative;
+  top: 20px;
+  margin-left: 3em;
+  .box-hidden {
+    background: lighten($clr-alt, 10%);
+  }
+}

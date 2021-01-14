@@ -1,0 +1,72 @@
+.steps {
+    padding: 2em 1em;
+    &__title {
+      width: 100%;
+      margin-bottom: 1em;
+      display: block;
+      text-align: left;
+      font-size: 26px;
+      padding: 1em 0 0;
+    }
+    &__item {
+      @include flexbox($justify: flex-start);
+      position: relative;
+      max-width: 320px;
+      height: 75px;
+      padding: 1em;
+      background: lighten($clr-alt, 10%);
+      border-radius: 20px;
+      box-shadow: $shadow;
+      margin: 2em auto;
+      &:hover {
+        background: lighten($clr-primary, 35%);
+        i {
+          color: $clr-primary;
+        }
+      }
+    }
+    &__number {
+      color: white;
+      background: $clr-primary;
+      padding: 5px 10px;
+      border-radius: 50%;
+      position: absolute;
+      left: -15px;
+    }
+    &__icon {
+      color: darken($clr-alt, 40%);
+      font-size: 20px;
+      margin: 0.5em 1em;
+    }
+    &__subtitle {
+      font-weight: 600;
+    }
+  }
+  
+  // Breakpoint
+  @include computers {
+  
+    .steps {
+      @include flexbox;
+      margin: 1em 0;
+      &__item {
+        height: 115px;
+        margin: 1em 2em;
+        @include flexbox($direction: column, $wrap: nowrap);
+      }
+      &__number {
+        top: -15px;
+        margin: auto;
+        left: unset;
+      }
+      &__icon {
+        top: 10px;
+        position: relative;
+      }
+      &__subtitle {
+        padding: 1em;
+      }
+    }
+  
+  }
+  

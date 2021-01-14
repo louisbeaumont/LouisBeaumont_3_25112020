@@ -1,0 +1,20 @@
+button {
+  display: block;
+  margin: 2em auto;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 1em 2em;
+  background: linear-gradient(to bottom, $clr-secondary, $clr-primary);
+  box-shadow: $shadow;
+  transition: all 0.3s;
+  cursor: pointer;
+  &:hover {
+    background: linear-gradient(to bottom, lighten($clr-secondary, 4%), lighten($clr-primary, 5%));
+    box-shadow: $shadow-hover;
+  }
+}
+
+.menu__btn {
+  margin: -1em auto 6em;
+}

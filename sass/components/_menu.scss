@@ -1,0 +1,133 @@
+.menu {
+    background: lighten($clr-alt, 10%);
+    overflow: hidden;
+    &__bgd {
+      height: 300px;
+      width: 100%;
+      margin: 0;
+      object-fit: cover;
+    }
+    &__content {
+      position: relative;
+      max-width: 500px;
+      margin: auto;
+      top: -45px;
+      padding: 1.5em 1em 0;
+      border-radius: 40px 40px 0 0;
+      background: lighten($clr-alt, 10%);
+    }
+    &__name {
+      width: 100%;
+      @include flexbox($justify: space-between);
+      font-size: 24px;
+      font-weight: normal;
+      font-family: $ff-alt;
+    }
+    &__type {
+      margin: 2em 0 1em;
+      padding: 2px 0;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: uppercase;
+      width: 35px;
+      border-bottom: 2px solid $clr-tertiary;
+    }
+    &__meal {
+      position: relative;
+      max-width: 360px;
+      min-height: 60px;
+      padding: 0.5em;
+      background: white;
+      border-radius: 15px;
+      box-shadow: $shadow;
+      margin: 1em auto;
+      overflow: hidden;
+      cursor: pointer;
+      animation: fadeInMenus ease-out;
+      &:nth-of-type(1) {
+        animation-duration: 0.5s;
+      }
+      &:nth-of-type(2) {
+        animation-duration: 1s;
+      }
+      &:nth-of-type(3) {
+        animation-duration: 1.5s;
+      }
+      &:nth-of-type(4) {
+        animation-duration: 2s;
+      }
+      &:hover .menu__title,
+      &:hover .menu__text {
+        transition: all 2s ease;
+        white-space: nowrap;
+        width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      &:hover .menu__icon {
+        transition: right 0.5s ease;
+        right: 0;
+      }
+      &:hover i {
+        animation: validationSpinner 1s ease;
+      }
+      &:hover .menu__price {
+        transition: right 0.5s ease;
+        right: 70px;
+      }
+    }
+    &__title {
+      padding: 2px 0;
+      max-width: 250px;
+    }
+    &__text {
+      padding: 2px 0 0;
+      font-size: 14px;
+      max-width: 260px;
+    }
+    &__price {
+      position: absolute;
+      right: 20px;
+      bottom: 8px;
+      font-size: 14px;
+    }
+    &__icon {
+      @include flexbox;
+      position: absolute;
+      right: -50px;
+      top: 0;
+      border-radius: 0 15px 15px 0;
+      background: $clr-tertiary;
+      width: 50px;
+      height: 100%;
+      i {
+        color: white;
+        font-size: 18px;
+      }
+    }
+  }
+  
+ 
+  @include computers {
+    .menu {
+      &__bgd {
+        /* height: 350px;*/
+        background-position: center;
+      }
+      &__name {
+        justify-content: center;
+      }
+      &__content {
+        max-width: none;
+        @include flexbox($align: flex-start);
+      }
+      section {
+        padding: 0 1em;
+      }
+      &__meal {
+        width: 380px;
+        max-width: 400px;
+      }
+    }
+  }
+  
