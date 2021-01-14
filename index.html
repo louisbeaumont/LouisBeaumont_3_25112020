@@ -1,0 +1,127 @@
+<!-- PROJET 3 LOUIS BEAUMONT - VISUAL STUDIO CODE / SaSS  -->
+<!DOCTYPE html>
+<html lang="fr">
+
+<!--TETE DE PAGE-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohmyfood - Réservation de plats en ligne</title>
+    <meta name="description" content="Sélectionnez vos plats en ligne et commandez en toute sécurité">
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="icon" href="./img/logo/ohmyfood@2x.svg" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"  integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"  crossorigin="anonymous"/>
+  </head>
+<!--TETE DE PAGE-->
+
+<body>
+    <!--CHARGEMENT-->
+    <div class="loading">
+        <div class="loading__box">
+          <i class="loading__icon fas fa-circle-notch"></i>
+        </div>
+      </div>
+      <!--CHARGEMENT-->
+
+      <!--LOGO-->
+      <header>
+        <a class="brand" href="#">
+          <img src="./img/logo/ohmyfood@2x.svg" alt="Logo OhMyFood">
+        </a>
+      </header>
+      <!--LOGO-->
+      
+      <main>
+        <!--Description-->
+        <div class="intro">
+       <div class="intro__city"><i class="fas fa-map-marker-alt"></i>Paris, Belleville</div>
+      <h1 class="intro__title">Réservez le menu qui vous convient</h1>
+      <p class="intro__text">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+      <button>Explorer nos restaurants</button>
+        </div>
+        <!--Description-->
+
+        <!--FONCTIONNEMENT-->
+        <section class="steps">
+          <h2 class="steps__title">Fonctionnement</h2>
+          <div class="steps__item">
+            <div class="steps__number">1</div>
+            <i class="steps__icon fas fa-mobile-alt"></i>
+            <h3 class="steps__subtitle">Choisissez un restaurant</h3>
+          </div>
+          <div class="steps__item">
+            <div class="steps__number">2</div>
+            <i class="steps__icon fas fa-list-ul"></i>
+            <h3 class="steps__subtitle">Composez votre menu</h3>
+          </div>
+          <div class="steps__item">
+            <div class="steps__number">3</div>
+            <i class="steps__icon fas fa-store"></i>
+            <h3 class="steps__subtitle">Dégustez au restaurant</h3>
+          </div>
+        </section>
+        <!--FONCTIONNEMENT-->
+
+        <!--RESTAURANTS-->
+        <section class="restaurants">
+          <h2>Restaurants</h2>
+          <div class="cards">
+    
+            <a class="card" href="./menu_palette.html">
+              <article class="card__content">
+                <div class="card__img palette">
+                  <div class="card__tag">Nouveau</div>
+                </div>
+                <div class="card__infos">
+                  <div class="card__text">
+                    <h3>La palette du goût</h3>
+                    <p>Ménilmontant</p>
+                  </div>
+                  <div class="card__icon">
+                    <i class="far fa-heart"></i>
+                    <div class="box-hidden"></div>
+                    <i class="fas fa-heart"></i>
+                  </div>
+                </div>
+              </article>
+            </a>
+    
+            <a class="card" href="./menu_note.html">
+              <article class="card__content">
+                <div class="card__img note">
+                  <div class="card__tag">Nouveau</div>
+                </div>
+                <div class="card__infos">
+                  <div class="card__text">
+                    <h3>La note enchantée</h3>
+                    <p>Charonne</p>
+                  </div>
+                  <div class="card__icon">
+                    <i class="far fa-heart"></i>
+                    <div class="box-hidden"></div>
+                    <i class="fas fa-heart"></i>
+                  </div>
+                </div>
+              </article>
+            </a>
+    
+          </div>
+        </section>
+        <!--RESTAURANTS-->
+    
+</main>
+<div class="sticky"></div>
+<footer class="footer">
+  <nav>
+    <a class="brand" href="#">
+      <img src="./img/logo/ohmyfood@2x.svg" alt="Logo Oh My Food">
+    </a>
+    <a href=""><i class="fas fa-utensils"></i>Proposer un restaurant</a>
+    <a href=""><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
+    <a href="">Mentions Légales</a>
+    <a href="">Contact</a>
+  </nav>
+  
+</footer>
+</body>
+</html>
