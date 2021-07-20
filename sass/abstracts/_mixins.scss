@@ -5,7 +5,7 @@
     background-repeat: no-repeat;
   }
   
-  @mixin flexbox($direction: row, $wrap: wrap, $justify: center, $align: center) {
+  @mixin flexbox($direction: row, $align: center) {
     display: flex;
     align-items: $align;
   }
